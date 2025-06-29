@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../css/Navbar.css"
+import "../css/NavBar.css"
 import { FaSearch, FaHeart, FaHome } from 'react-icons/fa'; // Icons for better UI
 
 function Navbar() {
