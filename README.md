@@ -11,7 +11,7 @@ A movie listing and favorites app built with React.js using the TMDb API.
 ## Tech Stack
 - React.js
 - JavaScript (ES6+)
-- TMDb API
+- TMDb API - https://www.themoviedb.org/
 - HTML, CSS
 
 ## Getting Started
