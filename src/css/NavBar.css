@@ -1,0 +1,114 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Logo Styling */
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo-movie {
+  color: white;
+}
+
+.logo-hub {
+  color: #3a86ff; /* Accent blue */
+}
+
+/* Search Bar Styling */
+.navbar-search {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+.search-input {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  width: 100%;
+}
+
+.search-button {
+  padding: 0.5rem 1rem;
+  background: #3a86ff;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-button:hover {
+  background: #2667d6;
+}
+
+/* Navigation Links Styling */
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #3a86ff;
+}
+
+/* Mobile Responsiveness (Optional) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .navbar-search {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .navbar-links {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+/* Underline Animation */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #3a86ff;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
